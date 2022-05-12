@@ -1,1 +1,1 @@
-# Stock_Picker
+# ProfitsRUS
