@@ -54,3 +54,7 @@ It is hard to predict what challenges we will face during our analysis and thus,
 
 # Generate Buy Sell indicator
 -   Based on SMA
+
+# Next Steps
+- Finish High Low columns
+- Data - collect dow tickers (~20). Total rows = 20*1 year 
