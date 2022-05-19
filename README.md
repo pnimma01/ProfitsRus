@@ -41,3 +41,17 @@ It is hard to predict what challenges we will face during our analysis and thus,
 - pymongo
 - mongodb
 - Scikit-learn
+
+
+# High level data flow
+- Calculate three new fields
+-   SMA 20 & 50
+-   Volume Avg 10
+-   High / Low Ratio: 10/5 = 2, 150/145 = ?, 5/4 = 1.12
+-     May be get 52 week
+-   Based on Earnings between 0 and 1 (earning or no earning)
+- Output: Caclulate strike price + 20 days (FACT)
+  
+
+# Generate Buy Sell indicator
+-   Based on SMA
