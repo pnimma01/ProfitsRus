@@ -56,5 +56,11 @@ It is hard to predict what challenges we will face during our analysis and thus,
 -   Based on SMA
 
 # Next Steps
-- Finish High Low columns
-- Data - collect dow tickers (~20). Total rows = 20*1 year 
+- Finish High Low columns - done
+- Data - collect dow tickers (~20). Total rows = 20*1 year  - TBD
+- Create IPYNB for
+    - Download Data
+    - ML: Look at 2021 data and predict prices for 2022  Keep practicing with diff regressors until we are close to real stock prices.
+    - Algorithm based prediction (Buy/Sell/Hold Trends)
+- Export to SQL Server and process data for Tableau
+- Import to Tableau public and create story
