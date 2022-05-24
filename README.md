@@ -44,23 +44,26 @@ It is hard to predict what challenges we will face during our analysis and thus,
 
 
 # High level data flow
-### Calculate three new fields
+## Download Data
+- Download data from yahoo_finance and finta - one ticker based on user input (MSFT)
+    -  RSI, MACD
+- Save as CSV
+## Calculate new fields
 -   SMA 20 & 50
 -   Volume Avg 10
--   High / Low Ratio: 10/5 = 2, 150/145 = 1.03  , 5/4 = 1.12. May be get 52 week
--   Based on Earnings between 0 and 1 (earning or no earning)
-### Output: Caclulate strike price + 20 days (FACT)
-  
-
-# Generate Buy Sell indicator
+## ML
+- User prophet to predict timeseries for next 10 business days
+- use a combination of regressors to create diff prediction models
+- compare with actual stock price in those 10 business days (we are using 2021 data to predict first 10 days in 2022)
+## Calculate Predictors (Buy/Sell/Hold)
 -   Based on SMA
 
 # Next Steps
 - Finish High Low columns - done
 - Data - collect dow tickers (~20). Total rows = 20*1 year  - TBD
 - Create IPYNB for
-    - Download Data
-    - ML: Look at 2021 data and predict prices for 2022  Keep practicing with diff regressors until we are close to real stock prices.
+    - Download Data - done
+    - ML: Look at 2021 data and predict prices for 2022  Keep practicing with diff regressors until we are close to real stock prices. 
     - Algorithm based prediction (Buy/Sell/Hold Trends)
-- Export to SQL Server and process data for Tableau
+- Export to SQL Server on AWS and process data for Tableau
 - Import to Tableau public and create story
