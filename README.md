@@ -60,10 +60,11 @@ It is hard to predict what challenges we will face during our analysis and thus,
 
 # Next Steps
 - Finish High Low columns - done
-- Data - collect dow tickers (~20). Total rows = 20*1 year  - TBD
+- Data - collect dow tickers (~20). Total rows = 20*1 year  -not applicable
 - Create IPYNB for
-    - Download Data - done
-    - ML: Look at 2021 data and predict prices for 2022  Keep practicing with diff regressors until we are close to real stock prices. 
-    - Algorithm based prediction (Buy/Sell/Hold Trends)
-- Export to SQL Server on AWS and process data for Tableau
-- Import to Tableau public and create story
+    - Download Data - done: Step1*.ipynb
+    - ML: Look at 2021 data and predict prices for first 10 days in 2022. Predict with diff regressors until we are close to real stock prices. Done Step2*.ipynb
+    - Algorithm based prediction (Buy/Sell/Hold Trends) - done: Step1*.ipynb
+- Export to SQL Server: Postgres on user X's desktop - pending, 6/1
+- Import to Tableau public and create story - pending, 6/1- 7 PM, 6/2 - 8:15PM, 
+- Create Readme from tableau
