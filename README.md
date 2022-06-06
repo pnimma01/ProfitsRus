@@ -5,7 +5,15 @@
 Performance of the Stock market is based on both human sentiments and basic math. With the help of a strong algorithm and machine learning we want to combine and predict human sentiment as well as compute mathematical data to provide a benchmark for stock investment. 
 
 # Project Goal
-We are trying to create ML algorithm that will make predictions for a set of stock tickers and then evaluate it against historical data.
+We are trying to create an algorithm that will signal a Buy, Sell or Hold (Step 1). Additionally we will create a ML Model that will make predictions for a set of stock tickers and then evaluate it against historical data (Step 2). 
+
+# Contributors
+- Puneeth Nimmagadda
+        - Step 1 and Presentation
+- Aman Gill
+        - Step 2 and Presentation
+- Andrey Kotovets
+        - Step 2 and Presentation
 
 # Data Collection
 
@@ -36,12 +44,14 @@ It is hard to predict what challenges we will face during our analysis and thus,
 - pandas
 - matplotlib
 - Scipy
-- SQlLite3
-- psycopg2
-- pymongo
-- mongodb
-- Scikit-learn
-
+- yfinance
+- math
+- finta
+- prophet
+- mplfinance
+- SQl
+- postgres
+- pgadmin
 
 # High level data flow
 ## Download Data
@@ -56,15 +66,7 @@ It is hard to predict what challenges we will face during our analysis and thus,
 - use a combination of regressors to create diff prediction models
 - compare with actual stock price in those 10 business days (we are using 2021 data to predict first 10 days in 2022)
 ## Calculate Predictors (Buy/Sell/Hold)
--   Based on SMA
+-   Based on SMA and Volume
 
-# Next Steps
-- Finish High Low columns - done
-- Data - collect dow tickers (~20). Total rows = 20*1 year  -not applicable
-- Create IPYNB for
-    - Download Data - done: Step1*.ipynb
-    - ML: Look at 2021 data and predict prices for first 10 days in 2022. Predict with diff regressors until we are close to real stock prices. Done Step2*.ipynb
-    - Algorithm based prediction (Buy/Sell/Hold Trends) - done: Step1*.ipynb
-- Export to SQL Server: Postgres on user X's desktop - pending, 6/1
-- Import to Tableau public and create story - pending, 6/1- 7 PM, 6/2 - 8:15PM, 
-- Create Readme from tableau
+# Final Summary
+
