@@ -2,31 +2,31 @@
 
 # Project Background
 
-Performance of the Stock market is based on both human sentiments and basic math. With the help of a strong algorithm and machine learning we want to combine and predict human sentiment as well as compute mathematical data to provide a benchmark for stock investment. 
+Performance of the Stock market is a complex subject but it is also based on basic math. With the help of a strong algorithm and machine learning, we want to compute mathematical data to provide a benchmark for stock investment.
 
 # Project Goal
-We are trying to create an algorithm that will signal a Buy, Sell or Hold (Step 1). Additionally we will create a ML Model that will make predictions for a set of stock tickers and then evaluate it against historical data (Step 2). 
+We are trying to create an algorithm that will signal a Buy, Sell or Hold (Step 1). Additionally we will create a ML Model that will make predictions for a stock ticker and then evaluate it against historical data (Step 2). 
 
 # Contributors
-- Puneeth Nimmagadda
-        - Step 1 and Presentation
 - Aman Gill
         - Step 2 and Presentation
 - Andrey Kotovets
         - Step 2 and Presentation
+- Puneeth Nimmagadda
+        - Step 1 and Presentation
+        - Postgress SQL
 
 # Data Collection
 
-Data will be collected for a set number of stocks from an API service (example Yahoo Finance). At a minimum, We are going to collect the following:
-- Price-to-Earnings Ratio
-- Price-to-Book Ratio
-- Debt-to-Equity Ratio
-- Free Cash Flow
-- PEG Ratio
-- Payout ratio
-- Beta
-- Return on equity (ROE)
-- Free cash flow
+Data will be collected for a particular stock from available python libraries (example Yahoo Finance). We are going to collect the following attributes: 
+- Open price
+- Close price
+- volume
+- High for a calendar day
+- Low for a calendar day
+- MACD
+- RSI
+- TSI
 
 # Data Cleaning
 
@@ -55,18 +55,19 @@ It is hard to predict what challenges we will face during our analysis and thus,
 
 # High level data flow
 ## Download Data
-- Download data from yahoo_finance and finta - one ticker based on user input (MSFT)
-    -  RSI, MACD
-- Save as CSV
+- Download data from yahoo_finance and finta - one ticker based on user input.
+- Export to a CSV file.
 ## Calculate new fields
 -   SMA 20 & 50
 -   Volume Avg 10
 ## ML
-- User prophet to predict timeseries for next 10 business days
-- use a combination of regressors to create diff prediction models
-- compare with actual stock price in those 10 business days (we are using 2021 data to predict first 10 days in 2022)
+- User prophet to predict timeseries for next 10 business days in 2022.
+- use a combination of regressors to create diff prediction models.
+- compare with actual stock price in those 10 business days (we are using 2021 data to predict first 10 days in 2022).
 ## Calculate Predictors (Buy/Sell/Hold)
--   Based on SMA and Volume
+-   Based on SMA and Volume.
+        We created an algoritham that produces a buy/sell/hold signal using a combination of SMA values and volume.
 
 # Final Summary
-
+ProfitRus is a product that suits any investment style (including short vs long). The only input that is needed is the stock ticker and the timeframe, based on which it produces meaningful graphical representation of where the stock might be headed. 
+The functionality of the product can be improved by adding more regressors, thus making predictions more accurate.
